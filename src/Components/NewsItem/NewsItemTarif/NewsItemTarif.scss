@@ -1,0 +1,72 @@
+.newsItemTarif_container{
+     max-width: 1100px;
+     margin: 0 auto;
+    .newsItemTarif_block{
+        width: 100%;
+        padding: 20px;
+        border-radius: 16px;
+        border: 3px solid #EA3E2A;    
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-top: 30px;
+        .newsItemTarif_item{
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background-color: #EA3E2A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .newsItemTarif_icon{
+                font-size: 35px;
+                color: white;
+            }
+        }
+        h3{
+            color: #202020; 
+            font-family: 'Rubik';
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;   
+        }
+        
+        @media screen and (max-width: 768px) {
+            .newsItemTarif_item{
+                width: 40px;
+                height: 40px; 
+                .newsItemTarif_icon{
+                    font-size: 25px;
+                    color: white;
+                }
+            }
+            h3{ 
+                font-size: 26px; 
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .newsItemTarif_item{
+                width: 30px;
+                height: 30px; 
+                .newsItemTarif_icon{
+                    font-size: 20px;
+                    color: white;
+                }
+            }
+            h3{ 
+                font-size: 18px; 
+            }
+        }
+    }
+    h4{
+        color: #202020;
+        text-align: center;
+        font-family: 'Rubik';
+        font-size: 27px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;  
+        margin-top: 50px;
+    }
+}

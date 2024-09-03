@@ -1,0 +1,79 @@
+.homeEquipment_container{
+    padding: 50px 20px 50px 20px;
+    background: #FFF;
+    .homeEquipment_block{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: stretch;
+        gap: 20px;
+        .homeEquipment_item{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .homeEquipment_title{
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                h1{
+                    color: #202020;
+                    font-family: 'Rubik';
+                    font-size: 42px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 100%; /* 85.714% */                    
+                }
+                .homeEquipment_arrow{
+                    width: 30px;
+                    height: 30px;
+                    margin: 0;
+                    padding: 0;
+                    vertical-align: middle;
+                     
+                }
+                
+            }
+            .homeEquipment_card{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+    }
+    @media screen and (max-width: 1200px) {
+         .homeEquipment_block{
+            flex-direction: column;
+            .homeEquipment_item{
+                .homeEquipment_card{
+                    margin-top: 30px;
+                }
+            }
+         }
+    }
+    @media screen and (max-width: 768px) {
+         .homeEquipment_block{ 
+            .homeEquipment_item{
+                .homeEquipment_title{ 
+                    h1{ 
+                        font-size: 30px;  
+                        font-weight: 500;        
+                    }
+                    img{
+                        width: 20px;
+                        height: 20px; 
+                         
+                    }
+                    
+                }
+                .homeEquipment_card{
+                    display: flex;
+                    align-items: stretch;
+                    gap: 20px;
+                    
+                }
+            }
+         }
+    }
+   
+ 
+}

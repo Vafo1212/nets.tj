@@ -1,0 +1,53 @@
+.vacanciesCard_block{
+    border-radius: 12px;
+    background: #FFF;
+    padding: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    &:hover{
+        border: 3px solid #EA3E2A;        
+    }
+    h3{
+        color: #202020;
+        font-family: 'Rubik';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;  
+    }
+    p{
+        color: #202020;
+        font-family: 'Rubik';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; 
+        margin-top: 20px;        
+    } 
+    .vacanciesCard_item{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-top: 10px;
+        h6{
+            color: rgba(32, 32, 32, 0.56);
+            text-align: right;
+            font-family: 'Rubik';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 150% */
+        }
+        p{
+            color: #202020;
+            font-family: 'Rubik';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            margin-top: 0;
+        }
+    }   
+}

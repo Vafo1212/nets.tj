@@ -1,0 +1,41 @@
+.homeApplication_container {
+  background: #202020;
+  padding: 50px 20px;
+  .homeApplication_block {
+    max-width: 900px;
+    margin: 0 auto;
+    .homeApplication_title {
+      text-align: center;
+      h1 {
+        color: #fff;
+        font-family: "Rubik";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+      }
+      p {
+        color: #fff;
+        font-family: "Rubik";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 150%;
+      }
+      @media screen and(max-width: 768px) {
+        h1{
+         font-size: 30px;
+         line-height: 120%;
+        }
+        p{
+         font-size: 14px;
+         margin-top: 20px;
+        }
+      }
+    }
+    .homeApplication_item {
+
+    }
+  }
+
+}

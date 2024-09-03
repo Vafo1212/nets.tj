@@ -1,0 +1,66 @@
+.homeIptvCard_block {
+  width: 70%;
+  height: 500px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  background: linear-gradient(115deg, #72056d 0%, #ea3e2a 100%);
+  box-shadow: 0px 0px 100px 0px rgba(114, 5, 109, 0.55);
+  .homeIptvCard_item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      width: 90%;
+      margin: 0 auto;
+    img {
+      width: 50%;
+    }
+    p {
+      color: var(--sakh-mts-ru-nero, #fff);
+      font-family: "Rubik";
+      font-size: 22.5px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 142.222% */
+      max-width: 280px;
+    }
+  }
+  @media screen and(max-width: 1010px) {
+    width: 100%;
+    .homeIptvCard_item {
+ 
+      img {
+        width: 50%;
+      }
+      p {
+ 
+        max-width: none;
+      }
+    }
+  }
+  @media screen and(max-width: 768px) {
+    .homeIptvCard_item{
+        
+        flex-direction: column;
+        gap: 30px;
+        img{
+            width: auto;
+        }
+        p {
+            font-size: 18px;
+            text-align: center;
+          }
+    }
+ 
+  }
+  @media screen and(max-width: 460px) {
+    .homeIptvCard_item{ 
+        img{
+            width: 90%;
+        }
+ 
+    }
+ 
+  }
+}

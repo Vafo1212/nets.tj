@@ -1,0 +1,44 @@
+.sksAdvantagesCard_block{
+    padding: 20px 0;
+    border-top: 0.667px solid #555757;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    max-width: 405px;
+    h6{
+        color: #F95632;
+        font-family: 'Rubik';
+        font-size: 12.086px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;        
+    }
+    .sksAdvantagesCard_title{
+        h2{
+            color: #25282A;
+            font-family: 'Rubik';
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%; /* 100% */
+        }
+        p{
+            color: #626C77;
+            font-family: 'Rubik';
+            font-size: 14.125px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;  
+            margin-top: 10px;
+        }
+    }
+    @media screen and (max-width: 850px) {
+        max-width: none;
+        width: 100%;
+        .sksAdvantagesCard_title{
+            h2{ 
+                font-size: 20px; 
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.vacanciesBotomSlider_container {
+  padding: 50px 20px;
+
+  .vacanciesBotomSlider_block {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .vacanciesBotomSlider_title {
+      h1 {
+        color: #202020;
+        font-family: "Rubik";
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 114%;
+      }
+
+      p {
+        color: rgba(32, 32, 32, 0.87);
+        font-family: "Rubik";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        margin-top: 20px;
+      }
+
+      @media screen and (max-width: 768px) {
+        h1 {
+          font-size: 30px;
+        }
+
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .vacanciesBotomSlider_wrapper {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+
+      .vacanciesBotomSlider_item {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 100%;
+      }
+    }
+
+    .navigation_buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+
+      button {
+        background-color: #ea3e2a;
+        border-radius: 6px;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        font-family: "Rubik";
+        margin: 0 10px;
+        color: white;
+        &:hover {
+          background-color: #ea3e2a;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.sksProductCard_block {
+  border-top: 0.667px solid #555757;
+  padding: 10px 0px;
+  max-width: 362px;
+  h6 {
+    color: #a5a6a6;
+    font-family: 'Rubik';
+    font-size: 12.086px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;  
+  }
+  h3{
+    color: #202020;
+    font-family: 'Rubik';
+    font-size: 19.078px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; 
+    margin-top: 30px; 
+  }
+  p{
+    color: #626C77;
+    font-family: 'Rubik';
+    font-size: 14.125px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    margin-top: 10px;
+  }
+  @media screen and (max-width: 1000px) {
+    width: 48%;
+    max-width: none;
+  }
+  @media screen and (max-width: 850px) {
+    width: 100%; 
+  }
+}

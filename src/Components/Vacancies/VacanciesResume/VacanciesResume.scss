@@ -1,0 +1,64 @@
+.vacanciesResume_content{
+    background: #EA3E2A;
+    padding: 20px;
+    margin-top: 30px;
+    .vacanciesResume_block{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        .vacanciesResume_item{
+            h1{
+                color: #FFF;
+                font-family: 'Rubik';
+                font-size: 42px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 100%; 
+            }
+            p{
+                color: #FFF;
+                font-family:'Rubik';
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%;
+                margin-top: 10px;  
+            }
+        }
+        button{
+            border-radius: 12px;
+            background: #202020;
+            width: 200px;
+            height: 40px;
+            border: none;
+            cursor: pointer;
+            color: #FFF;
+            text-align: center;
+            font-family: "Rubik";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 125%; 
+            &:active{
+                transform: scale(.98);
+            }                       
+        }
+        @media screen and(max-width: 900px) {
+            .vacanciesResume_item{
+                h1{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+        @media screen and(max-width: 768px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    } 
+}

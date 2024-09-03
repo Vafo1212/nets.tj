@@ -1,0 +1,29 @@
+.footerText_block{
+    margin-top: 20px;
+    p{
+        color: var(--color-Gray-Chateau, #969FA8);
+        font-family: 'Rubik';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 23px;
+        line-height: 160%; /* 160% */    
+    }
+    .footerText_item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        p{
+            color: var(--color-Gray-Chateau, #969FA8);
+            font-family: 'Rubik';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400; 
+            margin-top: 0;
+            line-height: 160%; /* 160% */       
+            max-width: 350px;    
+    }
+   } 
+}

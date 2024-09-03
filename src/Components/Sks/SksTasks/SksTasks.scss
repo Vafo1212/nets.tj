@@ -1,0 +1,39 @@
+.sksTasks_container{
+    margin-top: 80px;
+    h1{
+        color: #202020;
+        text-align: center;
+        font-family: 'Rubik';
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;   
+    }
+    .sksTasks_block{
+        display: flex;
+        align-items: stretch;
+        gap: 20px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 120px;
+    }
+    @media screen and (max-width: 1239px) { 
+        .sksTasks_block{
+            justify-content: flex-start;
+        }
+    }
+    @media screen and (max-width: 934px) { 
+        .sksTasks_block{
+            justify-content: space-between;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        margin-top: 50px;
+        h1{
+            font-size: 30px;
+        }
+        .sksTasks_block{
+            margin-top: 50px;
+        }
+    }
+}

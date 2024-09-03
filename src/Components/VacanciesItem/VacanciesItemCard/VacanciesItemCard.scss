@@ -1,0 +1,17 @@
+.vacanciesItemCard_block{
+    padding: 50px 20px;
+    .vacanciesItemCard_item{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        border-radius: 12px;
+        background: #FFF;
+        box-shadow: 0px 21px 46px 0px rgba(18, 67, 103, 0.11);
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 38px; 
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }       
+    }
+}

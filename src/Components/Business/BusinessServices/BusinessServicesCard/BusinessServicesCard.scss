@@ -1,0 +1,49 @@
+.businessServicesCard_block{
+    border-radius: 24px;
+    background: var(--moskva-mts-ru-nero, #FFF);
+    padding: 20px;
+    display: flex;
+    align-items: center;    
+    gap: 20px;
+    justify-content: space-between;
+    width: 48%;
+    img{
+        width: 180px;
+    }
+    .businessServicesCard_item{
+      h3{
+        color: var(--moskva-mts-ru-shark, #1D2023);
+        font-family: 'Rubik';
+        font-size: 20.18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;  
+      }
+      P{
+        color: var(--moskva-mts-ru-shark, #1D2023);
+        font-family: 'Rubik';
+        font-size: 14.5px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;  
+        margin-top: 10px;
+      }
+      h4{
+        color: var(--moskva-mts-ru-shark, #1D2023);
+        font-family: 'Rubik';
+        font-size: 15.125px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; 
+        margin-top: 10px;
+      }
+    }
+    @media screen and (max-width: 1000px) {
+         width: 100%;
+         
+    }
+    @media screen and (max-width: 580px) {
+         flex-direction: column-reverse;
+
+    }
+}

@@ -1,0 +1,11 @@
+.newsTopCard_block{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    @media screen and (max-width: 870px) {
+        flex-direction: column;
+        
+    }
+}

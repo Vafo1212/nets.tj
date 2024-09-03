@@ -1,0 +1,51 @@
+.vacanciesValuesCard_block{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    img{
+        max-width: 265px;
+    }
+    .vacanciesValuesCard_item{
+        h2{
+            color: #202020;
+            font-family: 'Rubik';
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 133%; /* 133.333% */
+        }
+        p{
+            color: #202020;
+            font-family: 'Rubik';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 150%; /* 30px */
+            margin-top: 20px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        img{
+
+            max-width: none;
+            width: 70%;
+        }
+        .vacanciesValuesCard_item{
+            h2{ 
+                font-size: 25px;
+            }
+            p{
+ 
+                font-size: 20px;
+ 
+            }
+        }
+    }
+    @media screen and (max-width: 480px) { 
+        img{
+            width: 80%;
+        }
+ 
+    }
+}

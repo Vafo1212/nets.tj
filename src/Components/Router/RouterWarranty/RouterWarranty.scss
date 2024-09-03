@@ -1,0 +1,25 @@
+.routerWarranty_container{
+    padding: 50px 20px;
+    .routerWarranty_block{
+        max-width: 1200px;
+        margin: 0 auto;
+        h1{
+            color: var(--msk-rt-ru-ebony, #101828);
+            font-family: 'Rubik';
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 104%;             
+        }
+        .routerWarranty_item{
+            margin-top: 40px;
+        }
+        @media screen and (max-width: 768px) {
+            h1{
+                font-size: 30px;
+                font-weight: 500;
+            }
+            
+        }
+    }
+}

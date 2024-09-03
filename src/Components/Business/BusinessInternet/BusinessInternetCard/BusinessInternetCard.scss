@@ -1,0 +1,39 @@
+.businessInternetCard_block{
+   background-color: white;
+   padding: 20px;
+   max-width: 380px;
+   margin-bottom: 20px;
+   .businessInternetCard_img{
+     display: flex;
+     justify-content: center;
+   } 
+   .businessInternetCard_item{
+    margin-top: 40px;
+    h2{
+        color: #202020;
+        font-family: 'Rubik';
+        font-size: 25.734px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 112%; /* 112.262% */
+    }
+    p{
+        color: #626C77;
+        font-family: 'Rubik';
+        font-size: 13.828px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;  
+        min-height: 42px;
+    }
+   }
+   .businessInternetCard_btn{
+    margin-top: 20px;
+   }
+   @media screen and (max-width: 1200px) {
+     margin-left: 20px;
+   }
+   @media screen and (max-width: 768px) {
+     margin: 0 auto 20px auto;
+   }
+}

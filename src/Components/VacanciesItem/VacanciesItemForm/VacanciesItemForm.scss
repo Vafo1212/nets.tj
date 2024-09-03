@@ -1,0 +1,253 @@
+.vacanciesItemForm_container {
+  padding: 50px 20px;
+  .vacanciesItemForm_block {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 28px;
+    background: #fff;
+    box-shadow: 0px 21px 46px 0px rgba(18, 67, 103, 0.11);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    .vacanciesItemForm {
+      width: 700px;
+      .vacanciesItemForm_title {
+        text-align: center;
+        h1 {
+          color: #1d2023;
+          text-align: center;
+          font-family: "Rubik";
+          font-size: 42px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 104%; /* 104.762% */
+        }
+        p {
+          color: #626c77;
+          text-align: center;
+          font-family: "Rubik";
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 140%;
+          margin-top: 10px;
+        }
+      }
+      .vacanciesItemForm_item {
+        margin-top: 10px;
+        .vacanciesItemFormInput_block {
+          margin-top: 20px;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          .vacanciesItemFormInput_item {
+            width: 100%;
+            p {
+              color: #626c77;
+              font-family: "Rubik";
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+
+      
+            input[type="number"] {
+              -moz-appearance: textfield;
+            }
+            input {
+              border-radius: 8px;
+              border: 2px solid rgba(188, 195, 208, 0.5);
+              background: #fff;
+              outline: none;
+              width: 100%;
+              height: 40px;
+              margin-top: 5px;
+              text-indent: 10px;
+            }
+          }
+        }
+        .vacanciesItemFormInputHref_block {
+          margin-top: 20px;
+          p {
+            color: #626c77;
+            font-family: "Rubik";
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+          input {
+            border-radius: 8px;
+            border: 2px solid rgba(188, 195, 208, 0.5);
+            background: #fff;
+            outline: none;
+            width: 100%;
+            height: 40px;
+            margin-top: 5px;
+            text-indent: 10px;
+          }
+        }
+      }
+      h6{
+        color: #1D2023;
+        font-family: 'Rubik';
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+        text-align: center;
+        margin: 15px 0;       
+      }
+      .vacanciesItemFormFile_block{
+        border-radius: 8px;
+        border: 2px solid #D0D5DE;
+        padding: 10px; 
+        .vacanciesItemFormFile_item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .vacanciesItemFormFile{
+                width: 320px;
+            
+                position: relative;
+                input{
+                    width: 110px; 
+                    opacity: 0;
+                    cursor: pointer;
+                    z-index: 1000;
+                    position: relative;
+                }
+                p{
+                    color: #007CFF;
+                    text-align: center;
+                    font-family: 'Rubik';
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal; 
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                    span{
+                        color: #1D2023;
+                        text-align: center;
+                        font-family: 'Rubik';
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;                            
+                    }
+                }
+
+            }
+ 
+        }  
+        h5{
+            color: #969FA8;
+            text-align: center;
+            font-family: 'Rubik';
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 145%;
+            margin-top: 5px;             
+        }
+        @media screen and (max-width: 430px) {
+            .vacanciesItemFormFile_item{
+                .vacanciesItemFormFile{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 270px;
+                    p{
+                        span{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            // h5{
+            //     margin-top: 10px;
+            // }
+        }     
+      }
+      .vacanciesItemFormCommet_block{
+        margin-top: 20px;
+        .vacanciesItemFormCommet_item{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            h4{
+                color: #626C77;
+                font-family: 'Rubik';
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            p{
+                color: #626C77;
+                font-family: 'Rubik';
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 133%;  
+                border-radius: 4px;
+                background: #F2F3F7;
+                padding: 2px;                
+            }
+        }
+        textarea{
+            width: 100%;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 2px solid rgba(188, 195, 208, 0.50);
+            background: #FFF;         
+            resize: none;   
+            height: 150px;
+            outline: none;
+            padding: 10px;
+        }
+      }
+      h2{
+        color: #1D2023;
+        font-family: 'Rubik';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 133%; /* 133.333% */       
+        max-width: 680px;
+        margin: 20px 0 20px auto; 
+        span{
+            color: #007CFF;
+        }
+      }
+      .vacanciesItemForm_btn{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      @media screen and (max-width: 768px) {
+        .vacanciesItemForm_item{
+            .vacanciesItemFormInput_block{
+              flex-direction: column;
+            }
+        }
+        .vacanciesItemForm_title {
+            text-align: center;
+            h1 { 
+              font-size: 36px; 
+            }
+ 
+          }
+      }
+    }
+  }
+}

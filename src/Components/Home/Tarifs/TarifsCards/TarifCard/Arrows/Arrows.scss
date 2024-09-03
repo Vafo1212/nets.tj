@@ -1,0 +1,66 @@
+
+    
+    // .nexti{
+    //     height: 100%; 
+    //     width: 50px;
+    //     background-color: white;
+    //     position: absolute;
+    //     top: 0;
+    //     right: -1px;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    // }
+    // .previ{
+    //     height: 100%; 
+    //     width: 50px;
+    //     background-color: white;
+    //     position: absolute;
+    //     top: 0;
+    //     left: -1px;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     z-index: 100;
+    // }
+
+
+
+.arrowTarifs_block{ 
+    width: 50px;
+    height: 50px; 
+    // right: -70;
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0px 6px 24px rgba(15, 34, 79, 0.14);
+    z-index: 1000;
+    right: -40px;
+    &::before{
+        content: none;
+    }
+    img{
+        margin: 0 auto;
+        width: 10px;
+    }
+}
+.arrowTarifsLeft_block{ 
+    width: 50px;
+    height: 50px; 
+    right: 0;
+    left: -40px;
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0px 6px 24px rgba(15, 34, 79, 0.14);
+    z-index: 1000;
+    &::before{
+        content: none;
+    }
+    img{
+        margin: 0 auto;
+        width: 10px;
+    }
+}

@@ -1,0 +1,189 @@
+.footerContact_block {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  .footerLogo_block {
+    img {
+      max-width: 198px;
+    }
+    p {
+      color: #fff;
+      font-family: "Rubik";
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      margin-top: 30px;
+    }
+  }
+  .footerContactPhone_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .footerContactPhone_item {
+      &:nth-child(2) {
+        margin-top: 30px;
+      }
+      &:nth-child(3) {
+        margin-top: 30px;
+      }
+      h2 {
+        color: var(--color-Nero-Nero, #fff);
+        font-family: "Rubik";
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 152.381% */
+      }
+      h3 {
+        color: var(--color-Nero-Nero, #fff);
+        font-family: "Rubik";
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 188.235% */
+      }
+      p {
+        color: var(--color-Gray-Chateau, #969fa8);
+        font-family: "Rubik";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 150% */
+        margin-top: 5px;
+      }
+    }
+  }
+  .footerContactMobileApp_container {
+    .footerContactMobileApp_block {
+      .footerContactMobileApp_item {
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        img {
+          cursor: pointer;
+        }
+      }
+      p {
+        color: var(--color-Gray-Chateau, #969fa8);
+        font-family: "Rubik";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 150% */
+      }
+    }
+    .footerContactMobileSocial_block{
+      margin-top: 30px;
+      p{
+        color: #FFF; 
+        font-family: 'Rubik';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;  
+      }
+      .footerContactMobileSocial_item{
+        max-width: 270px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        .footerContactMobileSocialIcon_block{
+          cursor: pointer;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: black;  
+          display: flex;
+          align-items: center;
+          justify-content: center; 
+          a{
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+          } 
+          &:hover{
+              &:nth-child(1){
+                background: #2795CA;
+              }
+              &:nth-child(2){
+                background: #5266EB;
+              }
+              &:nth-child(3){
+                background: #537AC6;
+              }
+              // &:nth-child(4){
+              //   background: #C88343;
+              // }
+              &:nth-child(4){
+                background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+              }
+              &:nth-child(6){
+                background: #D92424;
+              }
+              &:nth-child(7){
+                background: #657EC7;
+              }
+              &:nth-child(8){
+                background: #000000;
+              }
+  
+            } 
+          &:nth-child(3){
+            border-radius: 8px;
+            .footerContactMobileSocial_icon{
+              font-size: 30px; 
+         
+            } 
+          }       
+          &:nth-child(4){
+            border-radius: 8px;
+            .footerContactMobileSocial_icon{
+              font-size: 25px; 
+         
+            } 
+          }       
+          &:nth-child(5){
+            border-radius: 8px;
+            .footerContactMobileSocial_icon{
+              font-size: 30px; 
+         
+            } 
+          }       
+          &:nth-child(6){
+            border-radius: 8px;
+            height: 30px;
+            .footerContactMobileSocial_icon{
+               
+         
+            } 
+          }       
+          &:nth-child(7){
+            border-radius: 8px;
+            .footerContactMobileSocial_icon{
+              font-size: 25px; 
+            }
+          }       
+          &:nth-child(8){
+            border-radius: 8px;
+            .footerContactMobileSocial_icon{
+              font-size: 25px; 
+            }
+          }       
+        
+          .footerContactMobileSocial_icon{
+            font-size: 20px;
+            color: white;
+            
+          } 
+        }
+      }
+    }
+  }
+}

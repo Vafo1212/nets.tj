@@ -1,0 +1,31 @@
+.businessServices_container{
+    padding: 50px 20px;
+    .businessServices_block{
+        max-width: 1200px;
+        margin: 0 auto;
+        h1{
+            color: var(--moskva-mts-ru-shark, #1D2023);
+            font-family: 'Rubik';
+            font-size: 42.625px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 103%;  
+        }
+        .businessServices_item{
+            display: flex;
+            align-items: stretch;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            @media screen and (max-width: 1000px) {
+                flex-direction: column;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            h1{
+                font-size: 30px;
+                font-weight: 500;
+            }
+        }
+    }
+}

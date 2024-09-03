@@ -1,0 +1,106 @@
+.vacanciesSearch_container{
+    padding: 50px 20px;
+    background: #EA3E2A;
+    .vacanciesSearch_block{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: stretch;
+        gap: 20px;
+        .vacanciesSearch_item{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            gap: 20px;
+            h1{
+                color: #FFF;
+                font-family: 'Rubik';
+                font-size: 42px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 114%; /* 114.286% */                
+            }
+            .vacanciesSearchInput_block{
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                 input{
+                    border-radius: 12px;
+                    background: #FFF;
+                    height: 46px;
+                    border: none;
+                    width: 328px;  
+                    outline: none;      
+                    text-indent: 10px; 
+                    font-size: 20px; 
+                    font-family: 'Rubik';    
+                    color: #202020;      
+                 }
+                 button{
+                    border-radius: 6px;
+                    background: #202020;
+                    width: 90px;
+                    height: 44px; 
+                    border: none;     
+                    cursor: pointer;   
+                    color: #FFF;
+                    text-align: center;
+                    font-family: 'Rubik';
+                    font-size: 13.234px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 105%; 
+                    &:active{
+                        transform: scale(.98);
+                    }                            
+                 }
+            }
+        }
+        @media screen and (max-width: 1000px) {
+            .vacanciesSearch_item{
+         
+    
+                h1{
+ 
+                    font-size: 30px;
+             
+                }
+           
+            } 
+            img{
+                width: 40%;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            flex-direction: column-reverse;
+            align-items: center;
+            .vacanciesSearch_item{
+            .vacanciesSearchInput_block{
+                input{
+                    width: 80%;
+                }
+            }
+               
+           
+            } 
+            img{
+                width: 80%;
+            }
+        }
+        @media screen and (max-width: 480px) { 
+            .vacanciesSearch_item{
+                h1{
+                    font-size: 26px;
+                }
+            .vacanciesSearchInput_block{
+                
+            }
+               
+           
+            } 
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

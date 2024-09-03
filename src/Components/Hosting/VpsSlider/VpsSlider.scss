@@ -1,0 +1,35 @@
+.vpsSlider_container{
+    padding: 50px 20px;
+    .vpsSlider_block{
+        max-width: 1200px;
+        margin: 0 auto;
+        .vpsSlider_title{
+            max-width: 800px;
+           h1{
+            color: #202020;
+            font-family: 'Rubik';
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;           
+           } 
+           p{
+            color: #202020;
+            font-family: 'Rubik';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;  
+            margin-top: 20px;       
+           }
+           @media screen and (max-width: 768px) {
+             h1{
+                font-size: 30px;
+             }
+           }
+        }
+        .vpsSlider_item{
+            margin-top: 30px;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.footerContactCard_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    .footerContactCard_item{
+
+        h2{
+            color: var(--color-Nero-Nero, #FFF);
+            font-family: 'Rubik';
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 146%;   
+            margin-top: 10px;    
+        }
+        p{
+            color: var(--color-Gray-Chateau, #969FA8);
+            font-family: 'Rubik';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; 
+            margin-top: 5px;     
+        }
+    }
+}

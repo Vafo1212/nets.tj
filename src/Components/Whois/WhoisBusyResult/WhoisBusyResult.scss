@@ -1,0 +1,102 @@
+.whoisBusyResul_container{
+    margin-top: 50px;
+    .whoisBusyResul_title{
+        width: 100%;
+        padding: 20px;
+        border-radius: 16px;
+        background: #FFF; 
+        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);     
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        z-index: 2;
+        position: relative;
+        h2{
+            color: #202020;
+            font-family: 'Rubik';
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;        
+        }    
+    }
+    .whoisBusyResul_block{
+        padding: 0 20px;
+
+        .whoisBusyResul_item{ 
+        border-radius: 0px 0px 16px 16px;
+        background: #FFF; 
+        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);     
+        width: 100%;
+        padding: 20px;
+        .whoisBusyResulDomains_title{
+            display: flex;
+            align-items: center;
+            gap: 10px; 
+            h4{
+                color: #202020;
+                font-family: 'Rubik';
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%;                
+            }
+            p{
+                color: #202020;
+                font-family: 'Rubik';
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 140%;
+            }
+        }
+        .whoisBusyResulDomains_block{
+            margin: 10px;
+            .whoisBusyResulDomains_item{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-top: 10px;
+                h4{
+                    color: #202020;
+                    font-family: 'Rubik';
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 140%;                
+                }
+                p{
+                    color: #202020;
+                    font-family: 'Rubik';
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 140%;
+                }                
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .whoisBusyResulDomains_title{ 
+                h4{ 
+                    font-size: 18px;              
+                }
+                p{ 
+                    font-size: 18px; 
+                }
+            }
+            .whoisBusyResulDomains_block{ 
+                .whoisBusyResulDomains_item{ 
+                    h4{ 
+                        font-size: 18px;                 
+                    }
+                    p{ 
+                        font-size: 18px; 
+                    }                
+                }
+            }
+        }
+        }
+        
+    }
+}

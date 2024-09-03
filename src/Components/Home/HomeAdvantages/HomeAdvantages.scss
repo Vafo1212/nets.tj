@@ -1,0 +1,25 @@
+.homeAdvantages_container{
+    padding: 50px 20px;
+    .homeAdvantages_block{
+        max-width: 1200px;
+        margin: 0 auto;
+        h1{
+            color: #202020;
+            font-family: 'Rubik';
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%; /* 57.143% */           
+        }
+        .homeAdvantages_item{
+            margin-top: 80px;
+            
+        }
+        @media screen and(max-width: 768px) {
+            h1{
+                font-size: 30px; 
+                font-weight: 500;
+            }
+        }
+    }
+}

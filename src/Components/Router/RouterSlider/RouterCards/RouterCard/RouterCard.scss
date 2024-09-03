@@ -1,0 +1,95 @@
+.routerCard_block{
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0px 6px 24px 0px rgba(15, 34, 79, 0.14);
+    padding: 10px 15px;
+    max-width: 350px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    .routerCard_img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            max-width: 170px;
+        }
+    }
+    h2{
+        color: var(--msk-rt-ru-ebony, #101828);
+        font-family: 'Rubik';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;  
+        margin-top: 15px;      
+    } 
+    h5{
+        color: var(--msk-rt-ru-ebony, #101828); 
+        font-family: 'Rubik';
+        font-size: 13.563px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;         
+    }   
+    .routerCard_item{
+        p{
+            color: var(--msk-rt-ru-ebony-50, rgba(16, 24, 40, 0.50)); 
+            font-family: 'Rubik';
+            font-size: 13.453px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;    
+            margin-top: 5px;  
+        }
+        .routerCardPurity_block{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: space-between;
+        }
+    }
+    .routerCard_price{
+        margin-top: 10px;
+        h3{
+            color: #202020;
+            font-family: 'Rubik';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 134%;             
+        }
+        p{
+            color: #626C77;
+            font-family: 'Rubik';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%; 
+            max-width: 160px;    
+
+        }
+    }
+    .routerCard_dowload{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        p{
+            color: #EA3E2A; 
+            font-family: 'Rubik';
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%;             
+        }
+        .download_icon{
+            font-size: 24px;
+            color: #EA3E2A; 
+        }
+    }
+    @media screen and (max-width: 768px) {
+        margin: 20px auto;
+    }
+}

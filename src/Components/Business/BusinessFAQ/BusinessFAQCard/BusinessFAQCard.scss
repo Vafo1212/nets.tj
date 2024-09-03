@@ -1,0 +1,38 @@
+.businessFAQCard_block{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-right: 1px solid var(--moskva-mts-ru-heather-50, rgba(188, 195, 208, 0.50));
+    border-left: 1px solid var(--moskva-mts-ru-heather-50, rgba(188, 195, 208, 0.50)); 
+    h3{
+        color: var(--color-Black, #000);
+        text-align: center;
+        font-family: 'Rubik';
+        font-size: 19.195px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 135%; 
+    }
+    .businessFAQCard_item{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        h4{
+            color: var(--moskva-mts-ru-crimson, #EA3E2A);
+            text-align: center; 
+            font-family: 'Rubik';
+            font-size: 17.367px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 149%;  
+        }
+    }
+    @media screen and (max-width: 1100px) {
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid var(--moskva-mts-ru-heather-50, rgba(188, 195, 208, 0.50));
+        border-bottom: 1px solid var(--moskva-mts-ru-heather-50, rgba(188, 195, 208, 0.50));
+    }
+}

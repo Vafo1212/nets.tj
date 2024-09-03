@@ -1,0 +1,14 @@
+.MyButton{
+    border-radius: 8px;   
+    text-align: center;
+    font-family: 'Rubik';
+    font-size: 16.07px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    border: none;
+    cursor: pointer;
+    &:active{
+     transform: scale(.98);
+    }  
+}

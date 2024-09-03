@@ -1,0 +1,36 @@
+.homeAdvantagesCard{
+    max-width: 380px;
+    margin-bottom: 20px;
+    img{
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+    }
+    h5{
+       margin-top: 30px;
+       color: #202020;
+       font-family: 'Rubik';
+       font-size: 20px;
+       font-style: normal;
+       font-weight: 500;
+       line-height: 120%; /* 120% */
+       height: 40px;
+    }
+    p{
+        margin-top: 16px;
+        color: #202020;
+        font-family: 'Rubik';
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 150%; /* 25.5px */        
+    }
+    @media screen and (max-width: 1124px) {
+        max-width: none;
+        width: 95%;
+    }
+    @media screen and (max-width: 768px) {
+        max-width: none;
+        width: 100%;
+    }
+}

@@ -1,0 +1,257 @@
+.form_container{
+    padding: 50px 20px;
+    .form_block{
+        width: 1000px;
+        margin: 0 auto;
+        border-radius: 16px;
+        background: #FFF;
+        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
+        padding: 50px 20px; 
+        position: relative;  
+        .formClose_icon{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            cursor: pointer;
+
+        }
+        .form_item{
+            max-width: 700px;
+            margin: 0 auto;
+            .form_title{
+                h3{
+                    color: #202020;
+                    font-family: 'Rubik';
+                    font-size: 23px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 121%;  
+                }  
+                p{
+                    color: #1D2023;
+                    font-family: 'Rubik';
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 155%;  
+                    margin-top: 15px;
+                }             
+            }
+            .form_data{
+                margin-top: 30px;
+                .formInput_block{
+                    margin-top: 20px;
+                    .formInput_item{
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                      p{
+                        color: #626C77;
+                        font-family: 'Rubik';
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 166%; 
+                        &:nth-child(2){
+                           background-color: #F2F3F7; 
+                           padding: 2px;
+                           border-radius: 5px;
+                        }      
+                      }
+                    }
+                    input{
+                        border-radius: 8px;
+                        border: 1px solid rgba(188, 195, 208, 0.50);
+                        background: #F2F3F7;
+                        width: 100%;
+                        height: 45px;
+                        margin-top: 5px;
+                        outline: none;
+                        text-indent: 10px;
+                    }
+                }
+
+                .vacanciesItemFormFile_block{
+                border-radius: 8px;
+                border: 2px solid #D0D5DE;
+                padding: 10px; 
+                margin-top: 10px;
+                .vacanciesItemFormFile_item{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .vacanciesItemFormFile{
+                        width: 320px;
+                    
+                        position: relative;
+                        input{
+                            width: 100%; 
+                            opacity: 0;
+                            cursor: pointer;
+                            z-index: 1000;
+                            position: relative;
+                        }
+                        p{
+                            color: #007CFF;
+                            text-align: center;
+                            font-family: 'Rubik';
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal; 
+                            position: absolute;
+                            width: 100%;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            cursor: pointer;
+                            span{
+                                color: #1D2023;
+                                text-align: center;
+                                font-family: 'Rubik';
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;                            
+                            }
+                        }
+            
+                    }
+            
+                }  
+                h5{
+                    color: #969FA8;
+                    text-align: center;
+                    font-family: 'Rubik';
+                    font-size: 11px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 145%;
+                    margin-top: 5px;             
+                }
+                @media screen and (max-width: 430px) {
+                    .vacanciesItemFormFile_item{
+                        .vacanciesItemFormFile{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 270px;
+                            p{
+                                span{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                    // h5{
+                    //     margin-top: 10px;
+                    // }
+                }     
+                }
+
+                .formInputPhone_block{
+                    margin-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    .formInputPhone_item{
+                        width: 100%;
+                        p{
+                            color: #626C77;
+                            font-family: 'Rubik';
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 166%; 
+                        }
+                        input::-webkit-outer-spin-button,
+                        input::-webkit-inner-spin-button {
+                          -webkit-appearance: none;
+                          margin: 0;
+                        }
+            
+                  
+                        input[type="number"] {
+                          -moz-appearance: textfield;
+                        }
+                        input{
+                            border-radius: 8px;
+                            border: 1px solid rgba(188, 195, 208, 0.50);
+                            background: #F2F3F7;
+                            width: 100%;
+                            height: 45px;
+                            margin-top: 5px;
+                            outline: none;
+                            text-indent: 10px;                            
+                        }
+                    }
+                }
+                .formArrowFile_block{
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    margin-top: 15px;
+                    gap: 10px;
+                    h4{
+                        color: #007CFF;
+                        font-family: 'Rubik';
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 150%;                     
+                    }
+                }
+                .formBtn_block{
+                    margin-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 20px;
+                    p{
+                        color: #626C77;
+                        font-family: 'Rubik';
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 153%;   
+                        max-width: 320px;
+                        span{
+                            color: #007CFF;
+                        }             
+                    }
+                }
+                @media screen and (max-width: 768px) {
+                    .formInputPhone_block{
+                        flex-direction: column;
+                   
+                    }
+                    .formBtn_block{
+                         flex-direction: column;
+                         align-items: flex-start;
+                         gap: 20px;
+                        p{ 
+                            max-width: none; 
+                        }
+                        .formBtn_item{
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }  
+       
+        @media screen and (max-width: 1035px) {
+            width: 100%;
+        }
+        @media screen and (max-width: 768px) {
+            box-shadow: none;
+        } 
+    }
+}
+
+
+
+
