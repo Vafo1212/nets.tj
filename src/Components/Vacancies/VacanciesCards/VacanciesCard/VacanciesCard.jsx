@@ -1,20 +1,20 @@
 import React from "react";
 import "./VacanciesCard.scss";
-const VacanciesCard = () => {
+import { useNavigate } from "react-router-dom";
+import { formatDate } from "../../../../Modules/GeneralModule/GeneralLogic";
+
+const VacanciesCard = ({vacanciesData}) => {
+  const navigate = useNavigate()
+  const data = formatDate(vacanciesData.created_at)
   return (
-    <div className="vacanciesCard_block">
-      <h3>Консультант call-центра</h3>
+    <div className="vacanciesCard_block" onClick={()=> navigate(`/vacanciesItem/${vacanciesData.id}`)}>
+      <h3>{vacanciesData.title}</h3>
       <p>
-        Наши консультанты – супергерои, которые 24/7 отвечают на входящие звонки
-        клиентов и пользователей Beeline. Если ты готов помогать в решении
-        сложных вопросов, консультировать по вопросам связи, тарифным планам и
-        «Интернету дома», то эта работа для тебя. Это отличная возможность для
-        старта карьеры в международной компании с перспективами развития во всех
-        направлениях бизнеса!
+        {vacanciesData.description}
       </p>
       <div className="vacanciesCard_item">
-        <h6>09.07.2024</h6>
-        <p>г.Душанбе</p>
+        <h6>{data}</h6>
+        <p>{vacanciesData.country}</p>
       </div>
     </div>
   );

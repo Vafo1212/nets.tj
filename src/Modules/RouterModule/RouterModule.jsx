@@ -15,7 +15,9 @@ import Menu from "../../Components/General/Menu/Menu";
 import { FiDownload } from "react-icons/fi";
 import RouterSlider from "../../Components/Router/RouterSlider/RouterSlider";
 
-import routerImg from "../../Assets/Router/img/image 28 (1).png";
+import routerImg from "../../Assets/Router/img/gp1704-2g-22a.jpg";
+import routerImg2 from "../../Assets/Router/img/preview.png";
+import routerImg3 from "../../Assets/Router/img/router.png";
 import RouterWarranty from "../../Components/Router/RouterWarranty/RouterWarranty";
 
 const RouterModule = () => {
@@ -50,6 +52,9 @@ const RouterModule = () => {
     { name: "Оплата сразу" },
   ];
   const router = [
+//     
+// 
+// 550
     {
       id: 1,
       img: routerImg,
@@ -62,80 +67,49 @@ const RouterModule = () => {
       puritySpeed: "100 Мбит/с",
       purityBottom: "Частота 5 ГГц",
       puritySpeedBottom: "100 Мбит/с",
-      price: "125 TJS/мес",
-      installment: "Рассрочка на 12 месяцев Без первого взноса",
+      price: "450 TJS",
+      installment: "Рассрочка на 9/18 месяцев без первого взноса",
       download: "Скачать полную информацию",
       downloadIcon: <FiDownload className="download_icon" />,
     },
     {
       id: 2,
-      img: routerImg,
-      title: "BDCOM GP1704-2F-E",
+      img: routerImg2,  // Замените на изображение второго роутера
+      title: "Роутер с поддержкой 733 Мбит/с",
       subTitle: "Роутер",
       lan: "Гигабитные порты LAN",
-      wifi: "Двухдиапазонный Wi-Fi",
+      wifi: "Общая пропускная способность до 733 Мбит/с",
       speed: "Скорость передачи данных:",
       purity: "Частота 2,4 ГГц",
-      puritySpeed: "100 Мбит/с",
+      puritySpeed: "300 Мбит/с",
       purityBottom: "Частота 5 ГГц",
-      puritySpeedBottom: "100 Мбит/с",
-      price: "125 TJS/мес",
-      installment: "Рассрочка на 12 месяцев Без первого взноса",
+      puritySpeedBottom: "433 Мбит/с",
+      price: "550 TJS",
+      installment: "Имеется рассрочка на 9/18 месяцев без первого взноса",
       download: "Скачать полную информацию",
       downloadIcon: <FiDownload className="download_icon" />,
     },
     {
       id: 3,
-      img: routerImg,
-      title: "BDCOM GP1704-2F-E",
-      subTitle: "Роутер",
-      lan: "Гигабитные порты LAN",
-      wifi: "Двухдиапазонный Wi-Fi",
+      img: routerImg3,  // Замените на изображение третьего роутера
+      title: "SNR-CPE-ME2-Lite",
+      subTitle: "Беспроводной маршрутизатор",
+      lan: "5xGE RJ45",
+      wifi: "IEEE 802.11a/b/g/n, 802.11ac Wave 2",
       speed: "Скорость передачи данных:",
       purity: "Частота 2,4 ГГц",
-      puritySpeed: "100 Мбит/с",
+      puritySpeed: "до 20 дБм",
       purityBottom: "Частота 5 ГГц",
-      puritySpeedBottom: "100 Мбит/с",
-      price: "125 TJS/мес",
-      installment: "Рассрочка на 12 месяцев Без первого взноса",
+      puritySpeedBottom: "до 20 дБм",
+      price: "550 TJS",
+      installment: "Имеется рассрочка на 9/18 месяцев без первого взноса",
       download: "Скачать полную информацию",
       downloadIcon: <FiDownload className="download_icon" />,
-    },
-    {
-      id: 4,
-      img: routerImg,
-      title: "BDCOM GP1704-2F-E",
-      subTitle: "Роутер",
-      lan: "Гигабитные порты LAN",
-      wifi: "Двухдиапазонный Wi-Fi",
-      speed: "Скорость передачи данных:",
-      purity: "Частота 2,4 ГГц",
-      puritySpeed: "100 Мбит/с",
-      purityBottom: "Частота 5 ГГц",
-      puritySpeedBottom: "100 Мбит/с",
-      price: "125 TJS/мес",
-      installment: "Рассрочка на 12 месяцев Без первого взноса",
-      download: "Скачать полную информацию",
-      downloadIcon: <FiDownload className="download_icon" />,
-    },
-    {
-      id: 5,
-      img: routerImg,
-      title: "BDCOM GP1704-2F-E",
-      subTitle: "Роутер",
-      lan: "Гигабитные порты LAN",
-      wifi: "Двухдиапазонный Wi-Fi",
-      speed: "Скорость передачи данных:",
-      purity: "Частота 2,4 ГГц",
-      puritySpeed: "100 Мбит/с",
-      purityBottom: "Частота 5 ГГц",
-      puritySpeedBottom: "100 Мбит/с",
-      price: "125 TJS/мес",
-      installment: "Рассрочка на 12 месяцев Без первого взноса",
-      download: "Скачать полную информацию",
-      downloadIcon: <FiDownload className="download_icon" />,
-    },
+    }
   ];
+  
+  
+  
   const routerWarrantyData = [
     {
       id: 1,
@@ -207,14 +181,24 @@ const RouterModule = () => {
     <div>
       <Menu />
       <HomeGeneralSlider slides={slides} />
+      {/* 
+      
+       */}
+      <div id="router">
       <RouterSlider title={routerTitle} data={router} titleText={"Роутеры"} />
+      </div>
+      <div id="Iptv">
       <RouterSlider title={routerTitle} data={router} titleText={"IP TV"} />
+      </div>
+      <div id="camera">
+      <RouterSlider title={routerTitle} data={router} titleText={"Камеры"}  />
+      </div>
       <RouterWarranty data={routerWarrantyData} />
-      <div className="routerResonse_container">
+      {/* <div className="routerResonse_container">
         <div className="routerResonse_block">
           <WhoisResponse data={routerResponse} />
         </div>
-      </div>
+      </div> */}
       <Footer />
     </div>
   );

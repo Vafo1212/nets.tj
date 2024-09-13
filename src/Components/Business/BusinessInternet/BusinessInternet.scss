@@ -1,5 +1,20 @@
 .businessInternet_container{
     padding: 50px 20px;
+    .form_container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 100vh;
+        z-index: 10000000;
+        .form_block{
+            max-width: 1200px;
+        }
+    }
     .businessInternet_block{
         max-width: 1200px;
         margin: 0 auto;

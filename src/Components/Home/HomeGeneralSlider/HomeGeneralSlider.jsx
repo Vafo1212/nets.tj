@@ -2,12 +2,33 @@ import React, { useState, useEffect, useRef } from 'react';
 import './HomeGeneralSlider.scss';
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
+import { homeSlider } from '../../../Modules/HomeModule/HomeLogic/HomeLogic';
+import Form from '../../General/Form/Form';
 
-const HomeGeneralSlider = ({slides}) => {
+const HomeGeneralSlider = ({data , black}) => {
+  const [slides, setSlides] = useState([])
+  const [showModal, setShowModal] = useState(false)
   const [currentIndex, setCurrentIndex] = useState(0);
   const [progress, setProgress] = useState(0);
   const progressRef = useRef();
+  const getHomeSlider = () => {
+    homeSlider().then(res => {
+      setSlides(res.data)
+    }).catch(err=> {
+      console.log(err)
+    })
+  }
+  useEffect(()=> {
+    if(data){
+      setSlides(data)
+    } else {
 
+      getHomeSlider()
+    }
+
+  }
+    
+    , [])
   useEffect(() => {
     progressRef.current = setInterval(() => {
       setProgress((prevProgress) => {
@@ -20,7 +41,7 @@ const HomeGeneralSlider = ({slides}) => {
     }, 50);
 
     return () => clearInterval(progressRef.current);
-  }, [slides.length]);
+  }, [slides?.length]);
 
   const goToSlide = (index) => {
     setCurrentIndex(index);
@@ -28,12 +49,12 @@ const HomeGeneralSlider = ({slides}) => {
   };
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides?.length);
     setProgress(0);
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + slides?.length) % slides?.length);
     setProgress(0);
   };
 
@@ -51,20 +72,20 @@ const HomeGeneralSlider = ({slides}) => {
           ))}
         </div>
         <div className="slider">
-          <img src={slides[currentIndex].image} alt={slides[currentIndex].title} className="slider-image" />
+          <img src={slides[currentIndex]?.image} alt={slides[currentIndex]?.title} className="slider-image" />
           <div className="slider-content">
             <div className="slider-text">
-              <h1>{slides[currentIndex].title}</h1> 
-              <ul>
-                {slides[currentIndex].description.split('\n').map((line, index) => (
-                  <li key={index}>{line}</li>
+              <h1 style={{color: black && '#202020'}}>{slides[currentIndex]?.title}</h1> 
+              <ul style={{color: black && '#202020'}}>
+                {slides[currentIndex]?.description.split('\n').map((line, index) => (
+                  <li key={index} style={{color: black && '#202020'}}>{line}</li>
                 ))}
               </ul>
             </div>
-            <button className="slider-button">{slides[currentIndex].textBtn}</button>
+            <button className="slider-button" onClick={()=> setShowModal(true)}>{slides[currentIndex]?.text_btn}</button>
           </div> 
           <div className="img_blok">
-            <img src={slides[currentIndex].imgItem} alt="" />
+            <img src={slides[currentIndex]?.img_item} alt="" />
           </div>
           <div className="slider-controls">
             <div className="slider-controls-item">
@@ -76,6 +97,14 @@ const HomeGeneralSlider = ({slides}) => {
           </div>
         </div>
       </div>
+      {
+        showModal &&
+      <div className="form_container">
+        <div className="form_block">
+          <Form show={showModal} setShowModal={setShowModal}/>
+        </div>
+      </div>
+      }
     </div>
   );
 };

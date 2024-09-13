@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "./Tarifs.scss";
-import TarifsCards from "./TarifsCards/TarifsCards";
+import TarifsCards from "./TarifsCards/TarifsCards"; 
 
-const Tarifs = ({ tarifsTitle, tarifCards }) => {
+const Tarifs = ({ tarifsTitle, tarifCards,tarifIptvData,  tarifAdditionallyData,  tarifYearCards }) => {
   const [activeTitle, setActiveTitle] = useState(0);
-
   return (
     <div className="tarifs_container" id="tarifs">
       <div className="tarifs_block">
@@ -22,9 +21,10 @@ const Tarifs = ({ tarifsTitle, tarifCards }) => {
           ))}
         </div>
         <div className="tarifs_item">
-          <TarifsCards tarifCards={tarifCards} />
+          <TarifsCards tarifCards={tarifCards} tarifIptvData={tarifIptvData}  tarifAdditionallyData={tarifAdditionallyData} activeTitle={activeTitle} tarifYearCards={tarifYearCards}/>
         </div>
       </div>
+      
     </div>
   );
 };

@@ -10,6 +10,8 @@ import NewsPage from "./Pages/NewsPage/NewsPage";
 import NewsItemPage from "./Pages/NewsItemPage/NewsItemPage";
 import RouterPage from "./Pages/RouterPage/RouterPage";
 import HostingPage from "./Pages/HostingPage/HostingPage";
+import DirectumPage from "./Pages/DirectumPage/DirectumPage";
+import VideoPage from "./Pages/VideoPage/VideoPage";
  
 
  
@@ -21,14 +23,16 @@ function App() {
       <Routes>
         <Route element={<HomePage/>} path="/"/>
         <Route element={<VacanciesPage/>} path="/vacancies"/>
-        <Route element={<VacanciesItemPage/>} path="/vacanciesItem"/>
+        <Route element={<VacanciesItemPage/>} path="/vacanciesItem/:id"/>
         <Route element={<BusinessPage/>} path="/business"/>
         <Route element={<WhoisPage/>} path="/whois"/>
         <Route element={<SksPage/>} path="/system"/>
         <Route element={<NewsPage/>} path="/news"/>
-        <Route element={<NewsItemPage/>} path="/newsItem"/>
+        <Route element={<NewsItemPage/>} path="/newsItem/:id"/>
         <Route element={<RouterPage/>} path="/router"/>
         <Route element={<HostingPage/>} path="/hosting"/>
+        <Route element={<DirectumPage/>} path="/directum"/>
+        <Route element={<VideoPage/>} path="/video"/>
       </Routes>
     </BrowserRouter>
   );

@@ -1,37 +1,16 @@
 import React from "react";
 import "./TarifCard.scss"; 
 import MyButton from "../../../../../UI/MyButton/MyButton";
-const TarifCard = ({ tarifCards }) => {
-  // {
-  //   id: 1,
-  //   topImg: backImg,
-  //   topText: 'Первые 10 дней — бесплатно',
-  //   backgroundTopImg: '',
-  //   name: 'NETS 1',
-  //   title: 'Домашний интернет для небольших потребностей в потоковом видео и онлайн-играх.',
-  //   tarifInfo: [
-  //     {img: imgInfo1, text: 'Бесплатное подключение' },
-  //     {img: imgInfo2, text: 'Безлимитный трафик' },
-  //     {img: imgInfo3, text: 'Локальные ресурсы до 100 Мбит/с' },
-  //     {img: imgInfo4, text: 'до 1 Мбит/с' },
-  //   ],
-  //   indecatorLine: '70%',
-  //   connect: {
-  //     text: 'Возможность подключить дополнительные услуги',
-  //     img: [
-  //       {img: logo1,},
-  //       {img: logo2,},
-  //       {img: logo3,},
-  //     ]
-  //   },
-  //   prefPrice: '125 TJS/мес',
-  //   currPrice: '115 TJS',
-  //   stock: 'Стоимость по акции первые 2 месяца, с 3 месяца — 115 TJS/мес'
-  // }
+const TarifCard = ({ tarifCards, show }) => {
+
   return (
     <div className="tarifCard_block">
-      <div className="tarifCardTop_block"  style={{background: `url(${tarifCards.topImg})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
-        <p>{tarifCards.topText}</p>
+      <div className="tarifCardTop_block"  style={{background: `url(${tarifCards.top_img})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
+       {
+        tarifCards.top_text &&
+        <p>{tarifCards.top_text}</p>
+       }
+       
       </div>
       <div className="tarifCardBottom_block">
         <div className="tarifCardName_block">
@@ -39,9 +18,9 @@ const TarifCard = ({ tarifCards }) => {
           <p>{tarifCards.title}</p>
         </div>
         <div className="tarifCardInfo_block">
-          {tarifCards.tarifInfo?.map((e) => (
+          {tarifCards.tarif_infos?.map((e) => (
             <div className="tarifCardInfo_item">
-              <img src={e.img} alt="" />
+              <img src={e.image} alt="" />
               <p>{e.text}</p>
             </div>
           ))}
@@ -49,7 +28,7 @@ const TarifCard = ({ tarifCards }) => {
         <div className="tarifCardloadding_block">
           <div
             className="tarifCardloadding_line"
-            style={{ width: tarifCards.indecatorLine }}
+            style={{ width: tarifCards.indicator_line + '%' }}
           ></div>
         </div>
         <div className="tarifCardConnect_block">
@@ -62,12 +41,20 @@ const TarifCard = ({ tarifCards }) => {
         </div>
         <div className="tarifCardPrice_block">
           <div className="tarifCardPrice_item">
-            <h2>{tarifCards.prefPrice}</h2>
-            <p>{tarifCards.currPrice}</p>
+            {
+              tarifCards?.active ? 
+
+              <h2>{tarifCards.pref_price}</h2> :
+              <h2>{tarifCards.pref_price} TJS/мес</h2>
+            }
+            {
+              !tarifCards?.active &&
+            <p>{tarifCards.curr_price} TJS</p>
+            }
           </div>
           <h5>{tarifCards.stock}</h5>
         </div>
-        <div className="tarifCard_btn">
+        <div className="tarifCard_btn" onClick={()=> show(true)}>
         <MyButton name={"Подключить"} width={"140px"} height={"40px"} />
         </div>
       </div>

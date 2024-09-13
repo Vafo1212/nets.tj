@@ -3,6 +3,7 @@ import './HomeEquipment.scss'
 import arrowImg from '../../../Assets/Home/img/HomeEquipment/SVG.svg'
 import HomeEquipmentCards from './HomeEquipmentCards/HomeEquipmentCards' 
 import HomePromotion from './HomePromotion/HomePromotion'
+import { NavLink } from 'react-router-dom'
 const HomeEquipment = ({equipmentCard}) => {
   return (
     <div className='homeEquipment_container' id='promotion'>
@@ -15,8 +16,10 @@ const HomeEquipment = ({equipmentCard}) => {
             <div className="homeEquipment_card">
                 {
                  equipmentCard?.map((e)=> 
-                
-                 <HomeEquipmentCards img={e.img} name={e.name} key={e.id}/>
+                 <a href={e.link} className='link'>
+
+                   <HomeEquipmentCards img={e.img} name={e.name} key={e.id}/> 
+                 </a>
                 )
                 }
             </div>

@@ -5,6 +5,7 @@
     background: #FFF;
     box-shadow: 0px 6px 24px 0px rgba(15, 34, 79, 0.14);
     margin: 20px auto;
+    // min-height: 603px;
     .tarifCardTop_block{
         background-size: cover;
         background-repeat: no-repeat;
@@ -137,7 +138,8 @@
                     font-size: 17px;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: 24px;  
+                    line-height: 24px; 
+                    text-decoration: line-through red; 
                 }
             }
             h5{

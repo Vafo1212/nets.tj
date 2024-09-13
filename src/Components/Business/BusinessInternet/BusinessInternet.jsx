@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './BusinessInternet.scss'
 
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"; 
 import BusinessInternetCard from './BusinessInternetCard/BusinessInternetCard';
+import Form from '../../General/Form/Form';
 
 
 const BusinessInternet = ({data}) => {
+  const [showModal, setShowModal] = useState(false)
   const setting = {
     dots: false,
     infinite: true,
@@ -68,12 +70,20 @@ const BusinessInternet = ({data}) => {
            <Slider {...setting}>
               {
                 data?.map((i)=> 
-                 <BusinessInternetCard img={i.img} title={i.title} text={i.text}/>
+                 <BusinessInternetCard img={i.img} title={i.title} text={i.text} show={setShowModal}/>
                 )
               }
            </Slider>
         </div>
       </div>
+      {
+        showModal &&
+      <div className="form_container">
+        <div className="form_block">
+          <Form show={showModal} setShowModal={setShowModal}/>
+        </div>
+      </div>
+      }
     </div>
   )
 }

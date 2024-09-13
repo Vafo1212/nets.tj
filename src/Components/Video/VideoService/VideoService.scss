@@ -1,0 +1,25 @@
+.videoService_container{
+    padding: 20px;
+    .videoService_block{
+        max-width: 1200px;
+        margin: 50px auto;
+        h1{
+            color: #202020;
+            text-align: center;
+            font-family: 'Rubik';
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;      
+        }
+        .videoService_item{
+            margin-top: 50px;
+        }
+        @media screen and (max-width: 768px) {
+            h1{
+                font-size: 30px;
+                font-weight: 500;
+            }
+        }
+    }
+}

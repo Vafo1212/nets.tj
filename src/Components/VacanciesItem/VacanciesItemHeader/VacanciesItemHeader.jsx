@@ -1,13 +1,12 @@
 import React from "react";
-import "./VacanciesItemHeader.scss";
-import img from "../../../Assets/VacanciesItem/metaverse_char_004 1.png";
-const VacanciesItemHeader = () => {
+import "./VacanciesItemHeader.scss"; 
+const VacanciesItemHeader = ({title, img}) => {
   return (
     <div className="vacanciesItemHeader_container">
       <div className="vacanciesItemHeader_block">
         <div className="vacanciesItemHeader_item">
           <div className="vacanciesItemHeader_title">
-            <h1>Консультант call-центра</h1>
+            <h1>{title}</h1>
             <button>Откликнуться</button>
           </div>
           <div className="vacanciesItemHeader_text">

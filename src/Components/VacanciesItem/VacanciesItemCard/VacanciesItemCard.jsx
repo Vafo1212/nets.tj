@@ -6,14 +6,17 @@ import img2 from '../../../Assets/VacanciesItem/IMAGE (3).png'
 import img3 from '../../../Assets/VacanciesItem/IMAGE (4).png'
 import img4 from '../../../Assets/VacanciesItem/IMAGE (5).png'
 
-const VacanciesItemCard = () => {
+const VacanciesItemCard = ({requirements}) => {
   return (
     <div className='vacanciesItemCard_block'>
       <div className="vacanciesItemCard_item">
-        <VacanciesItemCardItem icon={img1} text={'Душанбе'}/>
-        <VacanciesItemCardItem icon={img2} text={'Опыт работы не требуется'}/>
-        <VacanciesItemCardItem icon={img3} text={'Полный рабочий день'} subText={'Возможна удаленная работа'}/>
-        <VacanciesItemCardItem icon={img4} text={'З/П договорная'}/>
+        {
+          requirements?.map((e)=> 
+          
+            <VacanciesItemCardItem icon={e.image} text={e.text} key={e.id}/>
+          )
+        }
+   
       </div>
     </div>
   )

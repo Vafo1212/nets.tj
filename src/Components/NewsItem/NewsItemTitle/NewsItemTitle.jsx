@@ -1,10 +1,11 @@
 import React from "react";
 import "./NewsItemTitle.scss";
-const NewsItemTitle = () => {
+import { formatDate } from "../../../Modules/GeneralModule/GeneralLogic";
+const NewsItemTitle = ({title, date}) => {
   return (
     <div className="newsItemTitle_block">
-      <h1>Новый тариф от NETS 50 Mbit/s всего за 500 сомони!</h1>
-      <p>26 июня 2024</p>
+      <h1>{title}</h1>
+      <p>{formatDate(date)}</p>
     </div>
   );
 };

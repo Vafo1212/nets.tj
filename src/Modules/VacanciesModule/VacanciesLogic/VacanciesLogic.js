@@ -1,5 +1,7 @@
 import img1 from '../../../Assets/Vacancies/img/metaverse_char_007.png';
 import img2 from '../../../Assets/Vacancies/img/Ellipse 6.png';
+import axios from 'axios';
+import { url } from '../../url/url';
  
 
 const valuesData = [
@@ -58,3 +60,7 @@ export const sliderData = [
         position: '- Инженер по развитию абонентской сети'
     },
 ]
+
+export const vacancies = async () => {
+  return await axios.get(`${url}vacancy/`)
+}

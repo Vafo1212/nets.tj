@@ -6,7 +6,7 @@ import { RiTelegramLine } from "react-icons/ri";
 import { IoLogoVk } from "react-icons/io";
 import { FaOdnoklassniki } from "react-icons/fa6";
 import img from '../../../Assets/NewsItem/Img/image 1.png'
-const NewsItemBanner = () => {
+const NewsItemBanner = ({img}) => {
   return (
     <div className='newsItemBanner_block'>
       <div className="newsItemBannerSocial_block">

@@ -1,34 +1,13 @@
 import React from "react";
 import "./VacanciesItemTextCard.scss";
-const VacanciesItemTextCard = () => {
+const VacanciesItemTextCard = ({index, name, text}) => {
   return (
     <div className="vacanciesItemTextCard_block">
-        <h2>01</h2>
+        <h2>0{index+1}</h2>
       <div className="vacanciesItemTextCard_item">
-        <h2>Что нужно делать</h2>
-      <ul>
-        <li>
-          В команде с владельцем продукта анализировать данные о поведении
-          пользователей, воронки, пути, сегменты, находить проблемные места и
-          точки роста
-        </li>
-        <li>
-          Создавать продуктовые дашборды (в Superset) для отслеживания
-          показателей ресурса
-        </li>
-        <li>
-          Генерировать и проверять гипотезы, проводить A/B тесты и заниматься
-          оценкой результатов изменений продукта
-        </li>
-        <li>
-          Разрабатывать и вести систему метрик под архитектуру сайта/приложения
-          для оценки бизнес показателей и качества взаимодействия пользователей
-          с ресурсом
-        </li>
-        <li>
-          Мониторить ключевые метрики, искать причины изменений и аномалий.
-        </li>
-      </ul>
+        <h2>{name}</h2>
+        <div dangerouslySetInnerHTML={{ __html: text }} className="vacanciesItemTextCard_text"> 
+        </div>
       </div>
     </div>
   );

@@ -58,7 +58,7 @@ const HostingModule = () => {
         {
           id: 1,
           key: "CPU",
-          name: "1 x 3.3 ГГц",
+          name: "1 x 2.4 ГГц",
         },
         {
           id: 2,
@@ -73,7 +73,7 @@ const HostingModule = () => {
         {
           id: 4,
           key: "Интернет",
-          name: "200 Мбит/с",
+          name: "100 Мбит/с",
         },
         {
           id: 5,
@@ -81,35 +81,35 @@ const HostingModule = () => {
           name: "Бесплатно",
         },
       ],
-      prefPrice: "99 TJS/мес",
+      prefPrice: "49 TJS/мес",
     },
     {
       id: 2,
       topImg: backImg,
       topText: "Первые 10 дней — бесплатно",
-      name: "Cloud 15",
+      name: "Cloud 30",
       title:
         "Описание тарифа, для чего подходит. Например небольшой сайт одностраничка и тд",
       param: [
         {
           id: 1,
           key: "CPU",
-          name: "1 x 3.3 ГГц",
+          name: "1 x 2.4 ГГц",
         },
         {
           id: 2,
           key: "RAM",
-          name: "1 ГБ RAM",
+          name: "2 ГБ RAM",
         },
         {
           id: 3,
           key: "NVME",
-          name: "15 ГБ",
+          name: "30 ГБ",
         },
         {
           id: 4,
           key: "Интернет",
-          name: "200 Мбит/с",
+          name: "100 Мбит/с",
         },
         {
           id: 5,
@@ -123,29 +123,29 @@ const HostingModule = () => {
       id: 3,
       topImg: backImg,
       topText: "Первые 10 дней — бесплатно",
-      name: "Cloud 15",
+      name: "Cloud 40",
       title:
         "Описание тарифа, для чего подходит. Например небольшой сайт одностраничка и тд",
       param: [
         {
           id: 1,
           key: "CPU",
-          name: "1 x 3.3 ГГц",
+          name: "1 x 2.4 ГГц",
         },
         {
           id: 2,
           key: "RAM",
-          name: "1 ГБ RAM",
+          name: "2 ГБ RAM",
         },
         {
           id: 3,
           key: "NVME",
-          name: "15 ГБ",
+          name: "40 ГБ",
         },
         {
           id: 4,
           key: "Интернет",
-          name: "200 Мбит/с",
+          name: "100 Мбит/с",
         },
         {
           id: 5,
@@ -153,35 +153,35 @@ const HostingModule = () => {
           name: "Бесплатно",
         },
       ],
-      prefPrice: "99 TJS/мес",
+      prefPrice: "149 TJS/мес",
     },
     {
       id: 4,
       topImg: backImg,
       topText: "Первые 10 дней — бесплатно",
-      name: "Cloud 15",
+      name: "Cloud 50",
       title:
         "Описание тарифа, для чего подходит. Например небольшой сайт одностраничка и тд",
       param: [
         {
           id: 1,
           key: "CPU",
-          name: "1 x 3.3 ГГц",
+          name: "2 x 2.4 ГГц",
         },
         {
           id: 2,
           key: "RAM",
-          name: "1 ГБ RAM",
+          name: "4 ГБ RAM",
         },
         {
           id: 3,
           key: "NVME",
-          name: "15 ГБ",
+          name: "50 ГБ",
         },
         {
           id: 4,
           key: "Интернет",
-          name: "200 Мбит/с",
+          name: "100 Мбит/с",
         },
         {
           id: 5,
@@ -189,7 +189,79 @@ const HostingModule = () => {
           name: "Бесплатно",
         },
       ],
-      prefPrice: "99 TJS/мес",
+      prefPrice: "199 TJS/мес",
+    },
+    {
+      id: 5,
+      topImg: backImg,
+      topText: "Первые 10 дней — бесплатно",
+      name: "Cloud 80",
+      title:
+        "Описание тарифа, для чего подходит. Например небольшой сайт одностраничка и тд",
+      param: [
+        {
+          id: 1,
+          key: "CPU",
+          name: "2 x 2.4 ГГц",
+        },
+        {
+          id: 2,
+          key: "RAM",
+          name: "4 ГБ RAM",
+        },
+        {
+          id: 3,
+          key: "NVME",
+          name: "80 ГБ",
+        },
+        {
+          id: 4,
+          key: "Интернет",
+          name: "100 Мбит/с",
+        },
+        {
+          id: 5,
+          key: "IP-адрес",
+          name: "Бесплатно",
+        },
+      ],
+      prefPrice: "249 TJS/мес",
+    },
+    {
+      id: 6,
+      topImg: backImg,
+      topText: "Первые 10 дней — бесплатно",
+      name: "Cloud 100",
+      title:
+        "Описание тарифа, для чего подходит. Например небольшой сайт одностраничка и тд",
+      param: [
+        {
+          id: 1,
+          key: "CPU",
+          name: "4 x 2.4 ГГц",
+        },
+        {
+          id: 2,
+          key: "RAM",
+          name: "8 ГБ RAM",
+        },
+        {
+          id: 3,
+          key: "NVME",
+          name: "100 ГБ",
+        },
+        {
+          id: 4,
+          key: "Интернет",
+          name: "100 Мбит/с",
+        },
+        {
+          id: 5,
+          key: "IP-адрес",
+          name: "Бесплатно",
+        },
+      ],
+      prefPrice: "299 TJS/мес",
     },
   ];
   const bitrixCardsData = [
@@ -197,106 +269,79 @@ const HostingModule = () => {
       id: 1,
       topImg: backImg,
       topText: "Первые 10 дней — бесплатно",
-      name: "Cloud 15",
+      name: "Bitrix-1",
       title:
-        "Описание тарифа, для чего подходит. Например небольшой сайт одностраничка и тд",
+        "Идеально для малых групп до 50 человек",
       param: [
         {
           id: 1,
-          key: "CPU",
-          name: "1 x 3.3 ГГц",
+          key: "SSD",
+          name: "40 ГБ",
         },
         {
           id: 2,
-          key: "RAM",
-          name: "1 ГБ RAM",
+          key: "ОЗУ",
+          name: "4 ГБ",
         },
         {
           id: 3,
-          key: "NVME",
-          name: "15 ГБ",
+          key: "Двухъядерный процессор", 
         },
       ],
-      prefPrice: "99 TJS/мес",
+      prefPrice: "150 TJS/мес",
     },
     {
       id: 2,
       topImg: backImg,
       topText: "Первые 10 дней — бесплатно",
-      name: "Cloud 15",
+      name: "Bitrix-1",
       title:
-        "Описание тарифа, для чего подходит. Например небольшой сайт одностраничка и тд",
+        "Идеально для малых групп до 50 человек",
       param: [
         {
           id: 1,
-          key: "CPU",
-          name: "1 x 3.3 ГГц",
+          key: "SSD",
+          name: "70 ГБ",
         },
         {
           id: 2,
-          key: "RAM",
-          name: "1 ГБ RAM",
+          key: "ОЗУ",
+          name: "4 ГБ",
         },
         {
           id: 3,
-          key: "NVME",
-          name: "15 ГБ",
+          key: "Двухъядерный процессор", 
         },
       ],
-      prefPrice: "99 TJS/мес",
+      prefPrice: "250 TJS/мес",
     },
     {
       id: 3,
       topImg: backImg,
       topText: "Первые 10 дней — бесплатно",
-      name: "Cloud 15",
+      name: "Bitrix-1",
       title:
-        "Описание тарифа, для чего подходит. Например небольшой сайт одностраничка и тд",
+        "Идеально для малых групп до 50 человек",
       param: [
         {
           id: 1,
-          key: "CPU",
-          name: "1 x 3.3 ГГц",
+          key: "SSD",
+          name: "100 ГБ",
         },
         {
           id: 2,
-          key: "RAM",
-          name: "1 ГБ RAM",
+          key: "ОЗУ",
+          name: "8 ГБ",
         },
         {
           id: 3,
-          key: "NVME",
-          name: "15 ГБ",
+          key: "Четырехъядерный процессор", 
         },
       ],
-      prefPrice: "99 TJS/мес",
+      prefPrice: "350 TJS/мес",
     },
-    {
-      id: 4,
-      topImg: backImg,
-      topText: "Первые 10 дней — бесплатно",
-      name: "Cloud 15",
-      title:
-        "Описание тарифа, для чего подходит. Например небольшой сайт одностраничка и тд",
-      param: [
-        {
-          id: 1,
-          key: "CPU",
-          name: "1 x 3.3 ГГц",
-        },
-        {
-          id: 2,
-          key: "RAM",
-          name: "1 ГБ RAM",
-        },
-        {
-          id: 3,
-          key: "NVME",
-          name: "15 ГБ",
-        },
-      ],
-      prefPrice: "99 TJS/мес",
-    },
+ 
+
   ];
   const homeAdvantagesCardData = [
     {

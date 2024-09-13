@@ -1,11 +1,15 @@
 import React from 'react'
 import './HomeAdvantagesCard.scss'
-const HomeAdvantagesCard = ({img, title, subTitle}) => {
+const HomeAdvantagesCard = ({img, title, subTitle, active, activeCard}) => {
   return (
-    <div className='homeAdvantagesCard'>
-       <img src={img} alt="" />
+    <div className='homeAdvantagesCard' style={{display: active && 'flex' , flexDirection: 'column', alignItems: 'center' }}>
+      {
+        activeCard ? img : 
+       <img src={img} alt="" style={{width: active && 'auto', height: active && 'auto', marginLeft: active && '0'}}/>
+      }
+       
        <h5>{title}</h5>
-       <p>{subTitle}</p>
+       <p style={{textAlign: active && 'center', marginTop: active && '0'}}>{subTitle}</p>
     </div>
   )
 }

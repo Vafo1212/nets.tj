@@ -3,7 +3,7 @@ import './RouterCards.scss'
 import Slider from 'react-slick';
 import { NextArrow, PrevArrow } from '../../../Home/Tarifs/TarifsCards/TarifCard/Arrows/Arrows';
 import RouterCard from './RouterCard/RouterCard';
-const RouterCards = ({data}) => {
+const RouterCards = ({data, setActive}) => {
   // console.log(data, 'data')
   const settings = {
     dots: false,
@@ -68,7 +68,7 @@ const RouterCards = ({data}) => {
       {
         data?.map((e)=> 
         <>
-        <RouterCard data={e}/>
+        <RouterCard data={e} setActive={setActive}/>
         </>
         )
       }

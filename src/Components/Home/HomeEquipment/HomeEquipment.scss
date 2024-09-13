@@ -38,6 +38,15 @@
                 align-items: center;
                 gap: 20px;
             }
+            .link{
+                text-decoration: none;
+            }
+            @media screen and (max-width: 640px) {
+                .link{
+                    width: 30%;
+                }
+                
+            }
         }
     }
     @media screen and (max-width: 1200px) {

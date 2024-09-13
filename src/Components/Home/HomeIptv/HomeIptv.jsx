@@ -5,8 +5,10 @@ import img from "../../../Assets/Home/img/HomeIptv/Link (1).png";
 import HomeIptvList from "./HomeIptvList/HomeIptvList";
 import HomeIptvCard from "./HomeIptvCard/HomeIptvCard";
 import MyButton from "../../../UI/MyButton/MyButton";
+import Form from "../../General/Form/Form";
 const HomeIptv = ({ IptvCannel }) => {
   const [active, setActive] = useState(0);
+  const [activate, setActivate] = useState(false);
   return (
     <div className="homeIptv_container">
       <div className="homeIptv_block">
@@ -39,12 +41,20 @@ const HomeIptv = ({ IptvCannel }) => {
             ))}
           </div>
         </div>
-        <div className="homeIptv_btn">
-          <a href="#homeContact">
+        <div className="homeIptv_btn" onClick={()=> setActivate(true)}>
+
             <MyButton name={"Подключить"} width={"200px"} height={"40px"} />
-          </a>
+
         </div>
       </div>
+      {
+    activate &&
+    <div className="form_container">
+      <div className="form_block">
+        <Form show={true} setShowModal={setActivate}/>
+      </div>
+    </div>
+    }
     </div>
   );
 };

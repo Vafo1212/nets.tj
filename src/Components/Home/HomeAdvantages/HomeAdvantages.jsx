@@ -4,7 +4,7 @@ import HomeAdvantagesCard from './HomeAdvantagesCard/HomeAdvantagesCard'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-const HomeAdvantages = ({homeAdvantagesCardData, title}) => {
+const HomeAdvantages = ({homeAdvantagesCardData, title, active}) => {
     const settin = {
         dots: false,
         infinite: true,
@@ -60,14 +60,14 @@ const HomeAdvantages = ({homeAdvantagesCardData, title}) => {
   return (
     <div className='homeAdvantages_container'>
         <div className="homeAdvantages_block">
-            <h1>{title}</h1>
+            <h1 style={{textAlign: active && 'center'}}>{title}</h1>
             <div className="homeAdvantages_item">
                 <Slider {...settin}>
 
              {
                 homeAdvantagesCardData?.map((e)=> 
                 
-                <HomeAdvantagesCard img={e.img} title={e.title} subTitle={e.subTitle}/> 
+                <HomeAdvantagesCard img={e.img} title={e.title} subTitle={e.subTitle} active={active} activeCard={e.activeCard}/> 
                 )
              }
                 </Slider>

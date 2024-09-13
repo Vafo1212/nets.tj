@@ -9,7 +9,7 @@ const BusinessServices = ({data}) => {
           <div className="businessServices_item">
              {
                 data?.map((i)=> 
-                 <BusinessServicesCard img={i.img} title={i.title} text={i.text} key={i.id}/>
+                 <BusinessServicesCard img={i.img} title={i.title} text={i.text} key={i.id} link={i.link} active={i.active} />
                 )
              }
           </div>
